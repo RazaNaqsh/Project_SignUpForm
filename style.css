@@ -1,0 +1,52 @@
+:root{
+    font-size: 62.5%;
+}
+
+
+.container{
+    display: flex;
+    border: 0.4rem solid #000;
+    height: 82.5rem;
+    width: clamp(50vw, 70%,75vw);
+    margin: 4rem auto;
+    border-image: linear-gradient(45deg, aqua, rgb(122, 235, 122),rgb(221, 45, 45),rgb(241, 241, 95),rgb(80, 164, 248)) 1 ;
+    
+}
+.img-container{
+    width: 40%;
+    background: url(images/isekai.jpg);
+    /* background-size: contain; */
+position: relative;
+}
+.img-text{
+    background-color: #000;
+    opacity: .5;
+    height: 10rem;
+    width: 50rem;
+    position: absolute;
+}
+.img-text h1{
+    color: white;
+}
+.form-container{
+    width: 60%;
+    padding: 1rem 2rem ;
+}
+.link-start{
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: rgb(56, 236, 236);
+    position: relative;
+    top: -50px;
+}
+.link-start:after{
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: rgb(56, 236, 236);
+}
