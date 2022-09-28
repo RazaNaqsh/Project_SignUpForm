@@ -2,7 +2,9 @@
     font-size: 62.5%;
 }
 
-
+body{
+    background: url(images/background.jpg);
+}
 .container{
     display: flex;
     border: 0.4rem solid #000;
@@ -14,8 +16,8 @@
 }
 .img-container{
     width: 40%;
-    background: url(images/isekai.jpg);
-    /* background-size: contain; */
+    background: url(images/isekaiquartestpotrait.jpg);
+    background-size: cover;
 position: relative;
 }
 .img-text{
