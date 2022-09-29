@@ -1,5 +1,11 @@
-:root{
-    font-size: 62.5%;
+:root, 
+:root::after,
+:root::before{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   --font-desc: 1.3rem;
+   --gradient : linear-gradient(45deg, aqua, rgb(122, 235, 122),rgb(221, 45, 45),rgb(241, 241, 95),rgb(80, 164, 248)) 1;
 }
 
 body{
@@ -8,47 +14,39 @@ body{
 .container{
     display: flex;
     border: 0.4rem solid #000;
-    height: 82.5rem;
+    height: 50rem;
     width: clamp(50vw, 70%,75vw);
     margin: 4rem auto;
-    border-image: linear-gradient(45deg, aqua, rgb(122, 235, 122),rgb(221, 45, 45),rgb(241, 241, 95),rgb(80, 164, 248)) 1 ;
+    border-image:  var(--gradient);
     
 }
 .img-container{
-    width: 40%;
+    width: 45%;
     background: url(images/isekaiquartestpotrait.jpg);
     background-size: cover;
+    border-right: 5px solid;
+    border-image: var(--gradient);
 position: relative;
 }
 .img-text{
     background-color: #000;
+    width: 100%;
     opacity: .5;
-    height: 10rem;
-    width: 50rem;
     position: absolute;
+    translate: 0 40rem;
+    text-align: center;
 }
 .img-text h1{
     color: white;
 }
 .form-container{
-    width: 60%;
+    width: 55%;
     padding: 1rem 2rem ;
 }
-.link-start{
-    width: 0;
-    height: 0;
-    border: 50px solid transparent;
-    border-bottom-color: rgb(56, 236, 236);
-    position: relative;
-    top: -50px;
+.description{
+    font-size: var(--font-desc);
 }
-.link-start:after{
-    content: '';
-    position: absolute;
-    left: -50px;
-    top: 50px;
-    width: 0;
-    height: 0;
-    border: 50px solid transparent;
-    border-top-color: rgb(56, 236, 236);
+.link-start{
+    border: none;
+    background-color: dodgerblue;
 }
