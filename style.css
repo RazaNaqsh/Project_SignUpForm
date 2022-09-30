@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=M+PLUS+Rounded+1c:wght@900&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
 :root, 
 :root::after,
 :root::before{
@@ -9,7 +10,11 @@
 }
 
 body{
-    background: url(images/background.jpg);
+    background: #27272c;;
+    /* background-size: cover; */
+    
+    color: #ab79d6;
+    
 }
 .container{
     display: flex;
@@ -17,8 +22,7 @@ body{
     height: 50rem;
     width: clamp(50vw, 70%,75vw);
     margin: 4rem auto;
-    border-image:  var(--gradient);
-    
+    border-image:  var(--gradient);   
 }
 .img-container{
     width: 45%;
@@ -37,16 +41,38 @@ position: relative;
     text-align: center;
 }
 .img-text h1{
-    color: white;
+    color: rgb(248, 188, 188);
+    font-family: 'Permanent Marker', cursive;
 }
 .form-container{
     width: 55%;
     padding: 1rem 2rem ;
+    font-family: 'Dosis' ,sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
 }
-.description{
+.form-container h1{
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 2px;   
+}
+p{
     font-size: var(--font-desc);
+    font-family: 'Shadows Into Light',cursive;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+fieldset{
+    border-image: var(--gradient);
 }
 .link-start{
     border: none;
     background-color: dodgerblue;
+    padding: 1rem;
+    border-top-right-radius: 1rem;
+    /* border-top-left-radius: .5rem; */
+    border-bottom-left-radius: 1rem;
+    /* border-bottom-right-radius: .5rem; */
+}
+input:not(input[type="radio"]),select{
+    width: 35%;
 }
