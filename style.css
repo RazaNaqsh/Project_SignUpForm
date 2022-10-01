@@ -11,16 +11,14 @@
 
 body{
     background: #27272c;;
-    /* background-size: cover; */
-    
+ 
     color: #ab79d6;
     
 }
 .container{
     display: flex;
     border: 0.4rem solid;
-    
-    height: 50rem;
+    height: auto;
     width: clamp(50vw, 70%,75vw);
     margin: 4rem auto;
     border-image:  var(--gradient);   
@@ -38,7 +36,7 @@ position: relative;
     width: 100%;
     opacity: .5;
     position: absolute;
-    translate: 0 40rem;
+    bottom: 3.5rem;
     text-align: center;
 }
 .img-text h1{
@@ -67,14 +65,17 @@ p{
 fieldset{
     border-image: var(--gradient);
     margin: 10px 0 ;
+    width: 97.5%;
 }
 .isekai-details{
     border: 2px solid ;
     border-image: var(--gradient);
     padding: 20px 10px;
     margin: 10px 0;
+    display: flex;
+    flex-direction: column;
 }
-.isekai-details h3{
+.isekai-details h4{
     margin: 0 0 2px 0;
     font-weight: 900;
 }
@@ -85,7 +86,6 @@ fieldset{
     border-right: none;
     background:none;
     letter-spacing: 2px;
-    width: rem;
     padding: .6rem;
     font-size: 1.2rem;
     font-family: 'Permanent Marker', cursive;
@@ -96,8 +96,11 @@ fieldset{
     border-top-left-radius: .2rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: .2rem;
-    translate: 15rem 0;
 }
+.submit{
+    align-self: center;
+}
+
 input[type="password"],select{
     width: 100%;
     padding: 8px;
@@ -115,6 +118,7 @@ input,select{
     color: purple;
     font-weight: 900;
 }
-input[type="radio"]+label{
-    margin: 0 0 0 2rem;
+.radio{
+    display: flex;
+    gap: 2rem;
 }
