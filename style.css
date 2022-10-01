@@ -122,3 +122,11 @@ input,select{
     display: flex;
     gap: 2rem;
 }
+input:hover , button:hover{
+    transform: scale(0.99);
+    transition: ease;
+}
+input:focus{
+    background: lightblue;
+    border-radius: .5rem;
+}
