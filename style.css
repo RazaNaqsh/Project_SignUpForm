@@ -139,3 +139,12 @@ input:focus {
 	background: lightblue;
 	border-radius: 0.5rem;
 }
+input:invalid:not(input[type="radio"]) {
+	border: 2px solid rgb(255, 122, 122);
+	box-shadow: 1px 1px 7px rgb(255, 116, 116);
+}
+
+input:valid:not(input[type="radio"]) {
+	border: 2px solid green;
+	box-shadow: 1px 1px 7px lightgreen;
+}
