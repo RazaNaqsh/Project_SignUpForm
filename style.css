@@ -1,132 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=M+PLUS+Rounded+1c:wght@900&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
-:root, 
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=M+PLUS+Rounded+1c:wght@900&family=Permanent+Marker&family=Shadows+Into+Light&display=swap");
+:root,
 :root::after,
-:root::before{
-   margin:0;
-   padding:0;
-   box-sizing: border-box;
-   --font-desc: 1.3rem;
-   --gradient : linear-gradient(45deg, aqua, rgb(122, 235, 122),rgb(221, 45, 45),rgb(241, 241, 95),rgb(80, 164, 248)) 1;
+:root::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	--font-desc: 1.3rem;
+	--gradient: linear-gradient(
+			45deg,
+			aqua,
+			rgb(122, 235, 122),
+			rgb(221, 45, 45),
+			rgb(241, 241, 95),
+			rgb(80, 164, 248)
+		)
+		1;
 }
 
-body{
-    background: #27272c;;
- 
-    color: #ab79d6;
-    
+body {
+	background: #27272c;
+
+	color: #ab79d6;
 }
-.container{
-    display: flex;
-    border: 0.4rem solid;
-    height: auto;
-    width: clamp(50vw, 70%,75vw);
-    margin: 4rem auto;
-    border-image:  var(--gradient);   
+.container {
+	display: flex;
+	border: 0.4rem solid;
+	height: auto;
+	width: clamp(50vw, 70%, 75vw);
+	margin: 4rem auto;
+	border-image: var(--gradient);
 }
-.img-container{
-    width: 45%;
-    background: url(images/isekaiquartestpotrait.jpg);
-    background-size: cover;
-    border-right: 5px solid;
-    border-image: var(--gradient);
-position: relative;
+.img-container {
+	width: 45%;
+	background: url(images/isekaiquartestpotrait.jpg);
+	background-size: cover;
+	border-right: 5px solid;
+	border-image: var(--gradient);
+	position: relative;
 }
-.img-text{
-    background-color: #000;
-    width: 100%;
-    opacity: .5;
-    position: absolute;
-    bottom: 3.5rem;
-    text-align: center;
+.img-text {
+	background-color: #000;
+	width: 100%;
+	opacity: 0.5;
+	position: absolute;
+	bottom: 3.5rem;
+	text-align: center;
 }
-.img-text h1{
-    color: rgb(248, 188, 188);
-    font-family: 'Permanent Marker', cursive;
+.img-text h1 {
+	color: rgb(248, 188, 188);
+	font-family: "Permanent Marker", cursive;
 }
-.form-container{
-    width: 55%;
-    padding: 1rem 2rem ;
-    font-family: 'Dosis' ,sans-serif;
-    letter-spacing: 2px;
-    font-weight: 700;
+.form-container {
+	width: 55%;
+	padding: 1rem 2rem;
+	font-family: "Dosis", sans-serif;
+	letter-spacing: 2px;
+	font-weight: 700;
 }
-.form-container h1{
-    font-family: 'Patrick Hand', cursive;
-    letter-spacing: 2px; 
-    margin:1px auto;  
+.form-container h1 {
+	font-family: "Patrick Hand", cursive;
+	letter-spacing: 2px;
+	margin: 1px auto;
 }
-p{
-    font-size: var(--font-desc);
-    font-family: 'Shadows Into Light',cursive;
-    font-weight: 700;
-    letter-spacing: 2.5px;
-    margin: 0;
+p {
+	font-size: var(--font-desc);
+	font-family: "Shadows Into Light", cursive;
+	font-weight: 700;
+	letter-spacing: 2.5px;
+	margin: 0;
 }
-fieldset{
-    border-image: var(--gradient);
-    margin: 10px 0 ;
-    width: 97.5%;
+fieldset {
+	border-image: var(--gradient);
+	margin: 10px 0;
+	width: 97.5%;
 }
-.isekai-details{
-    border: 2px solid ;
-    border-image: var(--gradient);
-    padding: 20px 10px;
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
+.isekai-details {
+	border: 2px solid;
+	border-image: var(--gradient);
+	padding: 20px 10px;
+	margin: 10px auto 0 0;
+	display: flex;
+	flex-direction: column;
 }
-.isekai-details h4{
-    margin: 0 0 2px 0;
-    font-weight: 900;
+.isekai-details h4 {
+	margin: 0 0 2px 0;
+	font-weight: 900;
 }
-.link-start{
-    border-top: 2px solid yellowgreen;
-    border-bottom: 2px solid dodgerblue;
-    border-left: none;
-    border-right: none;
-    background:none;
-    letter-spacing: 2px;
-    padding: .6rem;
-    font-size: 1.2rem;
-    font-family: 'Permanent Marker', cursive;
-    font-weight: 900;
-    margin:  5px 0 0 0 ;
-    color: #ab79d6;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: .2rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: .2rem;
+.link-start {
+	border-top: 2px solid yellowgreen;
+	border-bottom: 2px solid dodgerblue;
+	border-left: none;
+	border-right: none;
+	background: none;
+	letter-spacing: 2px;
+	padding: 0.6rem;
+	font-size: 1.2rem;
+	font-family: "Permanent Marker", cursive;
+	font-weight: 900;
+	margin: 5px 0 0 0;
+	color: #ab79d6;
+	border-top-right-radius: 1rem;
+	border-top-left-radius: 0.2rem;
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 0.2rem;
 }
-.submit{
-    align-self: center;
+.submit {
+	align-self: center;
 }
 
-input[type="password"],select{
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-
+input[type="password"],
+select {
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
 }
-input[type="text"],input[type="email"]{
-    width: 40%;
-    padding: 8px 2px;
-    
+input[type="text"],
+input[type="email"] {
+	width: 40%;
+	padding: 8px 2px;
 }
-input,select{
-    margin:8px 0;
-    border-radius: 4px;
-    color: purple;
-    font-weight: 900;
+input,
+select {
+	margin: 8px 0;
+	border-radius: 4px;
+	color: purple;
+	font-weight: 900;
 }
-.radio{
-    display: flex;
-    gap: 2rem;
+.radio {
+	display: flex;
+	gap: 2rem;
 }
-input:hover , button:hover{
-    transform: scale(0.99);
-    transition: ease;
+input:hover,
+button:hover {
+	transform: scale(0.99);
+	transition: ease;
 }
-input:focus{
-    background: lightblue;
-    border-radius: .5rem;
+input:focus {
+	background: lightblue;
+	border-radius: 0.5rem;
 }
