@@ -1,117 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isekai Transfer Form</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isekai Transfer Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container"> 
+  <div class="container">
 
-        <div class="img-container"> 
-         <div class="img-text"> 
-          <h1>The Isekai World</h1> 
-         </div>
-        </div> 
+    <div class="img-container">
+      <div class="img-text">
+        <h1>The Isekai World</h1>
+      </div>
+    </div>
 
-        <div class="form-container"> 
-         <h1>Welcome to the Isekai Transfer Forum!</h1> 
-         <p class="description">Its always an Otaku's Dream to get isekaid into a world of his choice</p>
-         <p> You know you want to! </p> 
-<div class="personal">
-  
-           <fieldset class="personal-details">
-  
-             <legend>
-               Personal details
-             </legend>
-  
-             <form>
-               <label for ="name">Name:</label>
-                 <input type="text" id="name" name="username" value="" minlength="3" maxlength="20" required></input>
-  
-                 <label for = "email">Email:</label>
-                 <input type="email" id="email" name="user_mail" value =" " placeholder="you@example.com" required></input>
-  
-                 <label for="user_password">Password:</label>
-                 <input type="password" id="user_password" name="password" required>
+    <div class="form-container">
+      <h1>Welcome to the Isekai Transfer Forum!</h1>
+      <p class="description">Its always an Otaku's Dream to get isekaid into a world of his choice</p>
+      <p> You know you want to! </p>
+      <div class="personal">
 
-                 <label for="confirm_password">Confirm Password:</label>
-                 <input type="password" id="confirm_password" name="password" required>
+        <fieldset class="personal-details">
 
-                <div class="isekai-details">
-                   <h4>Isekai Transfer Details</h4>
-                   <div>
-                     <label for="username">Username</label>
-                     <input type="text" id="username" name="ig_user_name" placeholder="Type your In game username.." minlength="3" maxlength="15" required></input>
-                   </div>
-                   <div class="radio">
-                   <fielset class="isekai-type">
-                     <legend>
-                      Isekai Type
-                     </legend>
-                     <div class="radio">
-                       <div>
-                          <label for="type1">Reincarnation</label>
-                          <input type="radio" name="isekai-type" id="Reincarnation" required>
-                       </div>
-                       <div>
-                         <label for="type2">Transmigration</label>
-                          <input type="radio" name="isekai-type" id="Transmigration" required>
-                       </div>
-                       <div>
-                         
-                          <label for="type3">summoning</label>
-                          <input type="radio" name="isekai-type" id="summoning" required>
-                       </div>
-                     </div>
-                   </fielset>
+          <legend>
+            Personal details
+          </legend>
+
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="username" value="" minlength="3" maxlength="20" required></input>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="user_mail" value=" " placeholder="you@example.com" required></input>
+
+            <label for="user_password">Password:</label>
+            <input type="password" id="user_password" name="password" required>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="password" required>
+
+            <div class="isekai-details">
+              <h4>Isekai Transfer Details</h4>
+              <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="ig_user_name" placeholder="Type your In game username.."
+                  minlength="3" maxlength="15" required></input>
+              </div>
+              <div class="radio">
+                <fielset class="isekai-type">
+                  <legend>
+                    Isekai Type
+                  </legend>
+                  <div class="radio">
+                    <div>
+                      <label for="type1">Reincarnation</label>
+                      <input type="radio" name="isekai-type" id="Reincarnation" required>
+                    </div>
+                    <div>
+                      <label for="type2">Transmigration</label>
+                      <input type="radio" name="isekai-type" id="Transmigration" required>
+                    </div>
+                    <div>
+
+                      <label for="type3">summoning</label>
+                      <input type="radio" name="isekai-type" id="summoning" required>
+                    </div>
                   </div>
-                  <label for="race">Race</label>
-                   <select name="race" id="race" required>
-                  
-                      <option value =""> </option>
-                      <option value="type1">Human</option>
-                      <option value="type2">Elf</option>
-                      <option value="type3">Dwarf</option>
-                      <option value="type4">Giant</option>
-                      <option value="type5">Demon</option>
-                      <option value="type6">Vampire</option>
-                      <option value="type7">Ogre</option>
-                  
-                   </select>
-                  
-                   <label for="class">Class</label>
-                   <select name="class" id="class" required>
-                    <option value =""> </option>
-                    <option value="swordsman">Swordsman</option>
-                    <option value="mage">Mage</option>
-                    <option value="assassin">Assassin</option>
-                    <option value="necromancer">Necromancer</option>
-                    <option value="shooter">Shooter</option>
-                  </select>
-                   <div class="submit">
-                    <button type="submit" class="link-start">Link Start</button>
-                   </div>
-                </div>
-             </form>
-           </fieldset>
-</div>
+                </fielset>
+              </div>
+              <label for="race">Race</label>
+              <select name="race" id="race" required>
 
-         <!-- <fieldset> 
+                <option value=""> </option>
+                <option value="type1">Human</option>
+                <option value="type2">Elf</option>
+                <option value="type3">Dwarf</option>
+                <option value="type4">Giant</option>
+                <option value="type5">Demon</option>
+                <option value="type6">Vampire</option>
+                <option value="type7">Ogre</option>
 
-           <legend>
-               Isekai Transfer Details
-           </legend>
 
-           <form>
-          
-           </form>
-         </fieldset> 
-         -->
-        </div>  
-       
+              </select>
+              <label for="class">Class</label>
+              <select name="class" id="class" required>
+                <option value=""> </option>
+                <option value="swordsman">Swordsman</option>
+                <option value="mage">Mage</option>
+                <option value="assassin">Assassin</option>
+                <option value="necromancer">Necromancer</option>
+                <option value="shooter">Shooter</option>
+              </select>
+              <div class="submit">
+                <button type="submit" class="link-start">Link Start</button>
+              </div>
+            </div>
+          </form>
+        </fieldset>
+      </div>
+
+    </div>
+
 </body>
+
 </html>
