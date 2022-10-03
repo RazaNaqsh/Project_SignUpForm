@@ -13,11 +13,12 @@
 			rgb(80, 164, 248)
 		)
 		1;
+	--color-primary: #ab79d6;
 }
 
 body {
 	background: #27272c;
-	color: #ab79d6;
+	color: var(--color-primary);
 }
 .container {
 	display: flex;
@@ -118,7 +119,7 @@ fieldset {
 	font-family: "Permanent Marker", cursive;
 	font-weight: 900;
 	margin: 5px 0 0 0;
-	color: #ab79d6;
+	color: var(--color-primary);
 	border-top-right-radius: 1rem;
 	border-top-left-radius: 0.2rem;
 	border-bottom-left-radius: 1rem;
@@ -136,7 +137,7 @@ input,
 select {
 	margin: 8px 0;
 	border-radius: 4px;
-	color: purple;
+	color: #27272c;
 	font-weight: 900;
 	letter-spacing: 1.5px;
 	padding: 8px 2px;
@@ -149,8 +150,9 @@ button:hover {
 	transition: ease;
 }
 input:focus {
-	background: white;
+	background: lightcyan;
 	border-radius: 0.5rem;
+	transform: scale(1.025);
 }
 input:invalid:not(input[type="radio"]) {
 	border: 2px solid rgb(255, 122, 122);
