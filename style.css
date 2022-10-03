@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis&family=M+PLUS+Rounded+1c:wght@900&family=Permanent+Marker&family=Shadows+Into+Light&display=swap");
-:root,
-:root::after,
-:root::before {
+:root {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -19,7 +17,6 @@
 
 body {
 	background: #27272c;
-
 	color: #ab79d6;
 }
 .container {
@@ -52,7 +49,7 @@ body {
 }
 .form-container {
 	width: 55%;
-	padding: 1rem 2rem;
+	padding: 0.5rem 1rem;
 	font-family: "Dosis", sans-serif;
 	letter-spacing: 2px;
 	font-weight: 700;
@@ -72,12 +69,23 @@ p {
 fieldset {
 	border-image: var(--gradient);
 	margin: 10px 0;
-	width: 97.5%;
+	width: 95%;
 }
+.form-desc {
+	margin-bottom: 2rem;
+}
+.personal {
+	display: flex;
+	flex-wrap: wrap;
+}
+.personal div {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
 .isekai-details {
-	border: 2px solid;
-	border-image: var(--gradient);
-	padding: 20px 10px;
+	padding: 10px 5px;
 	margin: 10px auto 0 0;
 	display: flex;
 	flex-direction: column;
@@ -85,6 +93,14 @@ fieldset {
 .isekai-details h4 {
 	margin: 0 0 2px 0;
 	font-weight: 900;
+}
+.radio {
+	display: flex;
+	justify-content: space-around;
+}
+.radio div {
+	display: flex;
+	flex-direction: column;
 }
 .link-start {
 	border-top: 2px solid yellowgreen;
@@ -108,23 +124,18 @@ fieldset {
 	align-self: center;
 }
 
-input[type="password"],
-select {
-	width: 100%;
-	padding: 8px;
-	box-sizing: border-box;
+.personal input {
+	width: 90%;
 }
-input[type="text"],
-input[type="email"] {
-	width: 38.8%;
-	padding: 8px 2px;
-}
+
 input,
 select {
 	margin: 8px 0;
 	border-radius: 4px;
 	color: purple;
 	font-weight: 900;
+	padding: 8px 2px;
+	width: 100%;
 }
 .radio {
 	display: flex;
@@ -136,7 +147,7 @@ button:hover {
 	transition: ease;
 }
 input:focus {
-	background: lightblue;
+	background: white;
 	border-radius: 0.5rem;
 }
 input:invalid:not(input[type="radio"]) {
